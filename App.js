@@ -1,6 +1,8 @@
 import * as React from "react";
 import { WebView } from "react-native-webview";
 
+const subdomain = "harrison-test"; // Replace with your custom subdomain
+
 const INJECTED_JAVASCRIPT = `
   window.addEventListener("message", Subscribe);
   document.addEventListener("message", Subscribe);
@@ -36,15 +38,16 @@ export default class App extends React.Component {
   render() {
     return (
       <WebView
-        source={{ uri: "https://harrison-test.readyplayer.me/avatar?frameApi" }} // Change the source uri to your custom subdomain
+        source={{
+          uri: `https://${subdomain}.readyplayer.me/avatar?frameApi`,
+        }} // Change the source uri to your custom subdomain
+        injectedJavaScriptBeforeContentLoaded={INJECTED_JAVASCRIPT}
         onMessage={(event) => {
           var data = JSON.parse(event.nativeEvent.data);
           if (data.readyPlayerMe?.name == "avatar.exported") {
             alert(`${data.readyPlayerMe?.data.avatarUrl}`);
           }
         }}
-        javaScriptEnabled
-        injectedJavaScriptBeforeContentLoaded={INJECTED_JAVASCRIPT}
       />
     );
   }
