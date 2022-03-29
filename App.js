@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import { WebView } from "react-native-webview";
 
-const subdomain = "demo"; // Replace with your custom subdomain
+// Replace with your custom subdomain
+const subdomain = "demo";
 
 let isSubscribed = false;
 let count = 0;
@@ -61,7 +62,7 @@ const View = () => {
       ref={webview}
       source={{
         uri: `https://${subdomain}.readyplayer.me/avatar?frameApi`,
-      }} // Change the source uri to your custom subdomain
+      }}
       style={{ marginTop: 20 }}
       onLoad={subscribe}
       onMessage={(message) => process(message.nativeEvent.data)}
