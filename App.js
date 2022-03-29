@@ -31,11 +31,13 @@ const View = () => {
   const process = (data) => {
     const json = JSON.parse(data);
 
+    // Filter for only Ready Player Me Events
     if (json.source !== "readyplayerme") {
       return;
     }
 
     if (json.eventName === "v1.avatar.exported") {
+      // Event called after avatar has been created and the URL generated
       OnAvatarExported(json);
     }
 
