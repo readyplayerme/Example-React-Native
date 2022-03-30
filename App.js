@@ -8,8 +8,8 @@ let isSubscribed = false;
 let count = 0;
 const correlationId = "a0bf9c2a-44d7-4882-8e72-4bc7ab73849f";
 
-function onAvatarExported(json) {
-  alert(`Avatar Url = ${json.data?.url}`);
+function onAvatarExported(message) {
+  alert(`Avatar Url = ${message.data?.url}`);
 }
 
 const View = () => {
