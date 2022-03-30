@@ -8,12 +8,13 @@ let isSubscribed = false;
 let count = 0;
 const correlationId = "a0bf9c2a-44d7-4882-8e72-4bc7ab73849f";
 
-function OnAvatarExported(json) {
+function onAvatarExported(json) {
   alert(`Avatar Url = ${json.data?.url}`);
 }
 
 const View = () => {
   const webview = useRef();
+
   const subscribe = () => {
     if (isSubscribed) {
       return;
@@ -39,7 +40,7 @@ const View = () => {
 
     if (json.eventName === "v1.avatar.exported") {
       // Event called after avatar has been created and the URL generated
-      OnAvatarExported(json);
+      onAvatarExported(json);
     }
 
     if (json.eventName !== "v1.subscription.deleted") {
