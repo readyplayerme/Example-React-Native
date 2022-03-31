@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.0] - 2022.03.31
+
+## Added
+
+- support for new post message system
+
+## Removed
+
+- legacy post message event listening
+
 ## [0.1.0] - 2021-06-16
 
 ### Added
