@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Removed
 
-- Unused packagea are removed.
+- Unused package are removed.
 - Subscription deleted event removed.
 
 ## [0.2.0] - 2022.03.31
