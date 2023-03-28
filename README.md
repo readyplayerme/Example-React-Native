@@ -33,7 +33,9 @@ expo start
 
 We give users an interoperable personal avatar that travels with them across many virtual experiences. Developers use our plug-and-play avatar creator so they wouldn’t have to spend months on building their own.
 
+
 ### Getting Started
+[Read the documentation](https://docs.readyplayer.me) to get started with integrating Ready Player Me or explore the examples.
 
 Visit [docs.readyplayer.me](https://docs.readyplayer.me/) to get started with integrating Ready Player Me or explore the [examples](https://github.com/readyplayerme).
 
