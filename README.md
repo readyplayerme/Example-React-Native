@@ -35,7 +35,6 @@ We give users an interoperable personal avatar that travels with them across man
 
 
 ### Getting Started
-[Read the documentation](https://docs.readyplayer.me) to get started with integrating Ready Player Me or explore the examples.
 
 Visit [docs.readyplayer.me](https://docs.readyplayer.me/) to get started with integrating Ready Player Me or explore the [examples](https://github.com/readyplayerme).
 
@@ -45,6 +44,6 @@ Get in touch with the Ready Player Me community over at our [Discord](https://di
 
 ### Becoming a partner
 
-Ready Player Me is already used in over [600+ apps and games](https://readyplayer.me/partners).
+Ready Player Me is already used in [tousands of apps and games](https://readyplayer.me/partners).
 
-Want to add Ready Player Me avatars to your own app or game? Apply [here](http://readyplayer.me/become-a-partner) or let us know at [info@wolf3d.io](mailto:info@wolf3d.io).
+Want to add Ready Player Me avatars to your own app or game? Apply [here](http://readyplayer.me/become-a-partner) or let us know at [support@readyplayer.me](mailto:support@readyplayer.me).
