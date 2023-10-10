@@ -1,6 +1,6 @@
 # Ready Player Me embedded in a React Native WebView
 
-This example showcases embedding [Ready Player Me](https://readyplayer.me) avatar creator as a `WebView` to React Native mobile applications and retreiving the URL to the 3D model of the avatar.
+This example showcases embedding [Ready Player Me](https://readyplayer.me) avatar creator as a `WebView` to React Native mobile applications and retrieving the URL to the 3D model of the avatar.
 
 The example uses the cross-platform (iOS, Android, MacOS, Windows) [react-native-webview](https://github.com/react-native-webview/react-native-webview) module to load and interact with Ready Player Me inside a WebView.
 
