@@ -1,7 +1,7 @@
-import {IFrameEvent} from '../types';
+import { IFrameEvent } from '../types';
 
 export type UserAuthorizedEventPayload = {
-    id: string;
+  id: string;
 };
 
 export type UserAuthorizedEvent = IFrameEvent<UserAuthorizedEventPayload>;

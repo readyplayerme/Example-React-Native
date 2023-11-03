@@ -1,3 +1,3 @@
-import {IFrameEvent} from '../types';
+import { IFrameEvent } from '../types';
 
 export type UserLoggedOutEvent = IFrameEvent<never>;

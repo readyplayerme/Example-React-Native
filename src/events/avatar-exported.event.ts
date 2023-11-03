@@ -1,7 +1,9 @@
-import {IFrameEvent} from '../types';
+import { IFrameEvent } from '../types';
 
 export type AvatarExportedEventPayload = {
-    url: string;
+  url: string;
+  avatarId: string;
+  userId: string;
 };
 
 export type AvatarExportedEvent = IFrameEvent<AvatarExportedEventPayload>;
