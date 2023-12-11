@@ -6,7 +6,7 @@ const subdomain = "demo";
 
 export default function App() {
   const webView = useRef();
-  
+
   function onAvatarUrlReceived(message) {
     alert(`Avatar Url = ${message.data?.url}`);
   }
@@ -24,23 +24,23 @@ export default function App() {
   function onMessageReceived(message) {
     const data = message.nativeEvent.data;
     const json = JSON.parse(data);
-  
+
     if (json?.source !== 'readyplayerme') {
       return;
     }
-  
+
     if (json.eventName === "v1.avatar.exported") {
       onAvatarUrlReceived(json);
     }
   }
 
   return (
-    <WebView 
+    <WebView
       ref={webView}
       style={{ marginTop: 30 }}
       onLoad={onWebViewLoaded}
       onMessage={onMessageReceived}
-      source={{ uri: `https://${subdomain}.readyplayer.me/avatar?frameApi` }}
+      source={{ uri: `https://${subdomain}.readyplayer.me/avatar?frameApi&source=react-native-creator` }}
     />
   );
 }
