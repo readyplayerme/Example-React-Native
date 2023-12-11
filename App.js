@@ -40,7 +40,7 @@ export default function App() {
       style={{ marginTop: 30 }}
       onLoad={onWebViewLoaded}
       onMessage={onMessageReceived}
-      source={{ uri: `https://${subdomain}.readyplayer.me/avatar?frameApi&source=react-native-creator` }}
+      source={{ uri: `https://${subdomain}.readyplayer.me/avatar?frameApi&source=react-native-avatar-creator` }}
     />
   );
 }
