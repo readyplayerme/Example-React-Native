@@ -7,7 +7,7 @@ export const useAvatarCreatorUrl = (subdomain: string, config: AvatarCreatorConf
 
     if (config?.language) url += `/${config.language}`;
 
-    url += `/avatar?frameApi`;
+    url += `/avatar?frameApi&source=react-native-avatar-creator`;
 
     if (config?.clearCache) url += '&clearCache';
 
